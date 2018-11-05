@@ -485,7 +485,6 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
 
 
 
-
     private List<Polyline> polylines;
     private static final int[] COLORS = new int[]{R.color.primary_dark_material_light};
     @Override

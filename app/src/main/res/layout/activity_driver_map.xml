@@ -10,39 +10,48 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="111dp"
+
         android:orientation="vertical">
+
+
+        <Switch
+            android:id="@+id/workingSwitch"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Working" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <Button
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/logout"
-                android:text="logout"/>
-            <Button
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:text="logout" />
+
+            <Button
+                android:id="@+id/history"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/history"
-                android:text="history"/>
-            <Button
                 android:layout_weight="1"
-                android:layout_gravity="end"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:text="history" />
+
+            <Button
                 android:id="@+id/settings"
-                android:text="Settings"/>
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:text="Settings" />
         </LinearLayout>
-        <Switch
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Working"
-            android:layout_margin="10sp"
-            android:id="@+id/workingSwitch"/>
+
     </LinearLayout>
 
 
