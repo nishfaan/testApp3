@@ -68,7 +68,7 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
 
     private Button mLogout, mSettings, mRideStatus, mHistory;
 
-    private Switch mWorkingSwitch;
+    private Switch mOnlineSwitch;
 
     private int status = 0;
 
@@ -109,8 +109,8 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
         mCustomerPhone = (TextView) findViewById(R.id.customerPhone);
         mCustomerDestination = (TextView) findViewById(R.id.customerDestination);
 
-        mWorkingSwitch = (Switch) findViewById(R.id.workingSwitch);
-        mWorkingSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        mOnlineSwitch = (Switch) findViewById(R.id.onlineSwitch);
+        mOnlineSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){

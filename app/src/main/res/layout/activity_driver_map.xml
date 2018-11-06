@@ -1,40 +1,33 @@
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.badsect0r.testApp3.DriverMapActivity" >
+    tools:context="com.badsect0r.testApp3.DriverMapActivity">
 
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="111dp"
-
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
         android:orientation="vertical">
 
 
         <Switch
-            android:id="@+id/workingSwitch"
-            android:layout_width="110dp"
+            android:id="@+id/onlineSwitch"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:text="Working" />
+            android:text="Online" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/logout"
-                android:layout_width="57dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="logout" />
 
             <Button
                 android:id="@+id/history"
@@ -45,67 +38,80 @@
 
             <Button
                 android:id="@+id/settings"
-                android:layout_width="77dp"
+                android:layout_width="20dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_weight="1"
                 android:text="Settings" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="logout" />
         </LinearLayout>
 
     </LinearLayout>
 
 
-
     <LinearLayout
+        android:id="@+id/customerInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/customerInfo"
         android:layout_gravity="bottom"
-        android:orientation="vertical"
         android:background="@android:color/white"
-        android:visibility="gone"
         android:elevation="1dp"
-        android:translationZ="1dp">
+        android:orientation="vertical"
+        android:translationZ="1dp"
+        android:visibility="gone">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageView
+                android:id="@+id/customerProfileImage"
                 android:layout_width="100sp"
                 android:layout_height="100sp"
-                android:id="@+id/customerProfileImage"
-                android:src="@mipmap/ic_default_user"
-                android:padding="20sp"/>
+                android:padding="20sp"
+                android:src="@mipmap/ic_default_user" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:paddingLeft="40sp">
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/customerDestination"
-                    android:paddingBottom="10sp"
-                    android:text="Destination: --"/>
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="10sp"
+                    android:text="Destination: --" />
+
+                <TextView
                     android:id="@+id/customerName"
-                    android:paddingBottom="10sp"
-                    android:paddingTop="20sp"/>
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingTop="20sp"
+                    android:paddingBottom="10sp" />
+
+                <TextView
                     android:id="@+id/customerPhone"
-                    android:paddingBottom="10sp"
-                    android:paddingTop="20sp"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20sp"
+                    android:paddingBottom="10sp" />
             </LinearLayout>
         </LinearLayout>
+
         <Button
+            android:id="@+id/rideStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="picked customer"
-            android:id="@+id/rideStatus"/>
+            android:text="picked customer" />
 
 
     </LinearLayout>
