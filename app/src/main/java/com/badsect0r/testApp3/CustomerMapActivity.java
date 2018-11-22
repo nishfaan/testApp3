@@ -438,7 +438,7 @@ public class CustomerMapActivity extends FragmentActivity implements OnMapReadyC
         if (mDriverMarker != null){
             mDriverMarker.remove();
         }
-        mRequest.setText("call Uber");
+        mRequest.setText("call Taxi");
 
         mDriverInfo.setVisibility(View.GONE);
         mDriverName.setText("");

@@ -28,33 +28,37 @@
         android:hint="Phone"
         android:layout_marginBottom="20sp"
         android:inputType="number"/>
+
     <EditText
         android:id="@+id/car"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
         android:background="@null"
-        android:hint="Car"
-        android:layout_marginBottom="20sp"/>
+        android:hint="Car Detail" />
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/radioGroup"
         android:orientation="horizontal">
+
         <RadioButton
+            android:id="@+id/vCar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UberX"
-            android:id="@+id/UberX"/>
+            android:text="Car" />
+
         <RadioButton
+            android:id="@+id/vVan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UberBlack"
-            android:id="@+id/UberBlack"/>
+            android:text="Van" />
+
         <RadioButton
+            android:id="@+id/vPickup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UberXl"
-            android:id="@+id/UberXl"/>
+            android:text="Pickup" />
     </RadioGroup>
 
     <Button

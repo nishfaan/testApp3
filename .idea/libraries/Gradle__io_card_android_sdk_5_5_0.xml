@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: io.card:android-sdk-5.5.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-sdk-5.5.0.aar/8f065fa51cf58aa65c8741bb76b05e3f/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-sdk-5.5.0.aar/8f065fa51cf58aa65c8741bb76b05e3f/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-sdk-5.5.0.aar/483d7e88a2cd1ea6d2b703bf694ddeb8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-sdk-5.5.0.aar/483d7e88a2cd1ea6d2b703bf694ddeb8/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

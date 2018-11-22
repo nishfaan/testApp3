@@ -240,6 +240,7 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
                     .withListener(this)
                     .alternativeRoutes(false)
                     .waypoints(new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()), pickupLatLng)
+                    .key("AIzaSyA54VyzQ0E1DuEe7dI1bYXZ5gsYZcT50D0")
                     .build();
             routing.execute();
         }

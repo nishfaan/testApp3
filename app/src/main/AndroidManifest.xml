@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.badsect0r.testApp3">
 
     <!--
@@ -18,7 +19,8 @@
         android:label="testApp3"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <service android:name=".onAppKilled" android:stopWithTask="false"/>
         <activity android:name=".MainActivity">
             <intent-filter>
