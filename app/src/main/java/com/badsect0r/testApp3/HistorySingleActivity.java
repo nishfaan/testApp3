@@ -287,6 +287,7 @@ public class HistorySingleActivity extends AppCompatActivity implements OnMapRea
                 .withListener(this)
                 .alternativeRoutes(false)
                 .waypoints(pickupLatLng, destinationLatLng)
+                .key("AIzaSyA54VyzQ0E1DuEe7dI1bYXZ5gsYZcT50D0")
                 .build();
         routing.execute();
     }
@@ -298,7 +299,7 @@ public class HistorySingleActivity extends AppCompatActivity implements OnMapRea
 
 
     private List<Polyline> polylines;
-    private static final int[] COLORS = new int[]{R.color.primary_dark_material_light};
+    private static final int[] COLORS = new int[]{R.color.wallet_holo_blue_light};
     @Override
     public void onRoutingFailure(RouteException e) {
         if(e != null) {
